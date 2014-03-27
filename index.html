@@ -5,11 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Animated Books</title>
-		<link href='http://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-		<script type="text/javascript" src="js/typed.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/victorian.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
@@ -51,8 +49,10 @@
 						<span><i>:</i></span>
 					</div>
 					<div class="paper">
-						<h3>Create Your Own Victorian Pen Name</h3>
-						<input type="text" placeholder="First Name" spellcheck=false>
+						<h3>Create Your Own <br/>Victorian Pen Name</h3>
+						<input id="firstName" type="text" placeholder="First Name" spellcheck=false>
+						<input id="lastName" type="text" placeholder="Last Name" spellcheck=false>
+						<a href="#" class="generate-button">Write Novels!</a>
 					</div>
 					<div class="front"></div>
 				</div>
@@ -78,7 +78,11 @@
 								<li></li>
 								<li>
 									<span class="name by">By</span>
-									<span class="name">Augustus <br/>Thistlethwaite</span>
+									<span class="name result"></span>
+
+									<a href="#" class="reset-button">Get Another Name</a>
+									<a href="#" class="tweet" onclick="twitterShareBieber()">Tweet</a>
+									<a href="#" class="share" onclick="fbShareBieber()">Facebook Share</a>
 								</li>
 								<li></li>
 								<li></li>

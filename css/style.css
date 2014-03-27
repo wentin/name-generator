@@ -28,7 +28,7 @@ html {
 body {
 	background: #ffffff;
 	color: #572a07;
-	font-family: 'Lato', 'Arial', sans-serif;
+	font-family: Georgia, Times, "Times New Roman", serif;
 	font-weight: 400;
 	line-height: 1.2;
 }
@@ -75,7 +75,6 @@ a {
 .name {
 	cursor: pointer;
 	color: #572a07;
-	font-family: 'Rye', cursive;
 	display: inline-block;
 	font-size: 2em;
 	font-weight: 700;
@@ -87,13 +86,8 @@ a {
 	margin: 5px;
 	text-align: center;
 }
-
-.name:hover {
-	color: #85663c;
-}
-
 .name.by {
-	margin-top: 160px; 
+	margin-top: 140px; 
 	font-size: 1em;
 	display: block;
 }
@@ -261,6 +255,21 @@ Table of Contents
 	transform: rotateY(-36deg);
 }
 
+.page li a {
+	font-size: 14px;
+	display: inline-block;
+	background-color: #572a07;
+	width: 150px;
+	margin: 0 90px;
+	height: 24px;
+	color: #ffdea0;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 10px;
+}
+.page li a:hover {
+	opacity: 0.9;
+}
 /*
 	4. position, transform & transition
 */
@@ -625,24 +634,45 @@ Table of Contents
 	background-color: #ffdea0;
 	left: 115px;
 	bottom: 205px;
-	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .input .paper h3 {
-	letter-spacing: 2px;
+	font-size: 24px;
+	margin: 50px 0 10px 0;
+	text-align: center;
+	font-weight: normal;
+	line-height: 36px;
+	font-variant:small-caps;
+}
+.input .paper a {
 	font-size: 18px;
-	margin: 20px;
-	width: 240px;
+	display: block;
+	background-color: #572a07;
+	width: 190px;
+	height: 40px;
+	color: #ffdea0;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 10px;
+	font-variant:small-caps;
+}
+.input .paper a:hover {
+	opacity: 0.9;	
 }
 .input .paper input {
-	margin: 20px;
-	width: 290px;
+	margin: 10px 0;
+	width: 314px;
+	height: 50px;
+	padding:10px 50px;
 	line-height: 30px;
-	font-size: 20px;
+	background: url(../img/input-bg.png) no-repeat center center;
+	font-size: 18px;
 	display: block;
 	background-color: transparent;
 	border: none;
-	border-bottom: solid 1px #572a07;
-	font-family: 'Special Elite', cursive;
 	letter-spacing:2px;
 	color: #572a07;
 }
