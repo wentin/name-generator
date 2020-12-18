@@ -722,6 +722,7 @@ Table of Contents
 	position: absolute;
 	width: 100%;
 	top: 1px;
+	left: 0;
 	font-style: normal;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
