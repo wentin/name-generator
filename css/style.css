@@ -60,11 +60,16 @@ a {
 	color: #572a07;
 	text-decoration: none;
 }
+.container {
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
 .view {
 	display: none;
 	background: url(../img/library-books.jpg) no-repeat center center;
 	background-size: cover;
-	margin: 90px auto 20px;
 	max-width: 560px;
 	height: 700px;
 	overflow: hidden;
